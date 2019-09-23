@@ -1,0 +1,251 @@
+/*Variables*/
+$font-text: 'Roboto', sans-serif;
+$font-golden: 'Playball', cursive;
+
+/*Global*/
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-text;
+}
+h3, h1 {
+  font-weight: bold;
+}
+h3 {
+  font-size: 2rem;
+}
+h2 {
+  font-style: italic;
+  font-weight: normal;
+}
+i {
+  color: grey;
+  font-weight: normal;
+}
+
+/* Navbar */
+.navbar-dark .navbar-brand {
+    font-family: $font-golden;
+    color: #fed136;
+}
+.navbar-expand-md .navbar-nav {
+  margin-left: 650px;
+}
+.navbar-expand-md .navbar-nav .nav-link {
+  color: white
+}
+.navbar-brand {
+  color: #fed136;
+  font-family: 'Playball';
+  font-size: 2em;
+  margin-left: 150px;
+}
+/* Slider */
+.carousel-caption {
+  right: auto;
+  bottom: auto;
+  padding-top: 0;
+  padding-bottom: 0;
+  left: 50%;
+  top: 55%;
+  transform: translate(-50%, -50%); 
+}
+.btn-primary {
+  background: #fed136;
+  border-color: #fed136;
+}
+.btn:hover {
+  background: #300e36;
+  border-color: #300e36;
+}
+.carousel-inner, .carousel-item {
+  height: 75vh; 
+}
+.carousel-item img {
+  height: 100%;
+  object-fit: cover; 
+}
+
+/*3 karty*/
+.card {
+  height: 100%; 
+  border-style: none
+}
+.card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover; 
+}
+.card-body-inner {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.card-body i {
+  font-size: 30px;
+  background: #fed136;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  color: #fff;
+  border-radius: 50%;
+}
+.row {
+  margin-right: 0;
+  margin-left: 0;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+/*Portfolio*/
+.portolio {
+  height: 100%; 
+}
+.portfolio img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover; 
+}
+section.product.py-5 {
+  background: #f7f7f7;
+}
+.portfolio-body {
+  background: white;
+  height: 100px;
+  padding-top: 20px;
+}
+.col-md-4 {
+  padding-bottom: 50px;
+}
+h4.portfolio-title {
+  font-weight: bold;
+}
+h5.portfolio-title {
+  color: grey;
+  font-style: italic;
+  font-weight: normal;
+}
+h5 {
+  color: grey;
+  font-weight: normal;
+}
+.title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/*Footer*/
+.footer {
+  background: #dadfe8; 
+}
+.col-md-4.col-md-6.py-3 {
+  padding-left: 200px;
+  margin-top: 20px;
+}
+.icon {
+  margin-top: -45px;
+  font-size: 0;
+  position: absolute;
+  top: -40px;
+  left: 100%;
+  transform: translateY(-50%);
+  display: inline-block;
+  transform: rotate(90deg); 
+}
+.footer i {
+  font-size: 16px;
+  color: black;
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  border-radius: 50%;
+  text-align: center;
+  transform: rotate(270deg);
+  margin-top: 20px;
+  margin-right: 50px;
+  margin-left: -80px; 
+}
+.box-body i {
+  margin-top: 30px;
+  font-size: 25px;
+  background: #222222;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  color: #fff;
+  border-radius: 50%;
+}
+.row.justify-content-md-between {
+  height: 100px;
+  background: white;
+}
+
+/* Media */
+@media (max-width: 425px) {
+  .card-body {
+    width: auto;
+    margin-left: -200px;
+    margin-right: -190px;
+  }
+  .pb-5, .py-5 {
+    width: 425px;
+  }
+  .icon {
+    margin-left: -100px;
+  }
+  .copyright {
+    margin-left:-250px;
+    margin-top: 50px;
+  }
+  .carousel-inner, .carousel-item {
+    width: 425px;
+  }
+  .navbar-collapse {
+    margin-left: -600px;
+  }
+  }
+  
+  @media (width: 1024px) {
+  .navbar-expand-md .navbar-collapse {
+    margin-left: -400px;
+  }
+  .row {
+    margin-right: 0;
+    margin-left: 0;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .icon {
+    margin-left: 250px;
+    margin-top: -30px;
+  }
+  .copyright {
+    margin-left: -200px;
+    margin-top: 20px;
+  } 
+  }
+
+  @media (width: 768px) {
+  .navbar-expand-md .navbar-collapse {
+    margin-left: -600px;
+  }
+  .row {
+    margin-right: 0;
+    margin-left: 0;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .icon {
+    margin-left: 150px;
+    margin-top: -30px;
+  }
+  .copyright {
+    margin-left: -200px;
+    margin-top: 20px;
+  }
+  }
+  @media (width: 2560px) {
+  .navbar-expand-md .navbar-collapse {
+    margin-left: 1000px;
+  }
+  }
